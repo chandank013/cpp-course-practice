@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	int m,n;
-	cout<<"Enter two Numbers";
+	cout<<"Enter two Numbers: ";
 	cin>>m>>n;
 	    
 	while(m!=n)
