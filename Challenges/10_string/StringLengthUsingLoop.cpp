@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+	// Calculate the length of a string using a loop
 	string str="welcome";
 	int count=0;
 	    
@@ -10,7 +11,7 @@ int main()
 	{
 	    count++;
 	}
-	cout<<"Length is"<<count<<endl;
+	cout<<"Length is "<<count<<endl;
 	    
 	return 0;
 	    
