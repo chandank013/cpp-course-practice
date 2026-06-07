@@ -9,16 +9,17 @@ int * fun()
 		p[i]=5*i;
 	}
 	    
-	cout<<p<<endl;
+	cout<< "Pointer address: " << p << endl;
 	return p;
 }
     
 int main()
 {
-	int *q=fun();
-	cout<<q<<endl;
+	int *ptr=fun();
+	cout<< "Pointer address: " << ptr << endl;
+
 	for(int i=0;i<5;i++)
-	cout<<q[i]<<endl;
+	cout<< "Element " << i << ": " << ptr[i] << endl;
 		
 }
     
