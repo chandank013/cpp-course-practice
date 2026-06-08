@@ -19,17 +19,19 @@ class Complex
 		cout<<real<<"+i"<<img;
 	}
 	            
-	friend Complex operator+(Complex c1,Complex c2);
+	friend Complex operator+(Complex c1,Complex c2);  // Friend function declaration
 	
 };
+
     
-    Complex operator+(Complex c1,Complex c2)
-    {
-	    Complex temp;
-	    temp.real=c1.real+c2.real;
-	    temp.img=c1.img+c2.img;
-	    return temp;
-    }
+Complex operator+(Complex c1,Complex c2)
+{
+	Complex temp;
+	temp.real=c1.real+c2.real;
+	temp.img=c1.img+c2.img;
+	return temp;
+}
+
 
 int main()
 {
