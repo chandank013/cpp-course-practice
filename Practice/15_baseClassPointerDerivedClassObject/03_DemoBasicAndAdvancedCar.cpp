@@ -23,14 +23,11 @@ class AdvanceCar:public BasicCar
     
 int main()
 {
-	BasicCar b;
-	AdvanceCar *q=&b;
-	AdvanceCar a;
-	a.start();
-	a.playmusic();
-	BasicCar *ptr=&a;
+	BasicCar *ptr;
+	ptr=new AdvanceCar();
+
 	ptr->start();
-	ptr->playmusic(); // this function cannot be called.
-	    
+	
+	//ptr->playmusic(); //Error: Base class pointer cannot access derived class members
 }
     
