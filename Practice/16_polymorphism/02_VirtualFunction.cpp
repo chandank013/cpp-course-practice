@@ -25,7 +25,8 @@ int main()
 {
 	Derived d;
 	d.fun();
-	Base *ptr=&d;
+    
+	Base *ptr=&d;  // upcasting (function called on the base class pointer will be determined at runtime)
 	ptr->fun();
 	    
 }

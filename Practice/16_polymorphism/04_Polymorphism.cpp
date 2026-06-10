@@ -35,6 +35,7 @@ int main()
 {
 	Car *ptr=new Innova();
 	ptr->start();
+	
 	ptr=new Swift();
 	ptr->start();
 	    
