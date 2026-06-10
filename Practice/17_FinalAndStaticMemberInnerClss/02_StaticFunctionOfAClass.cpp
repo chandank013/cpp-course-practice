@@ -1,4 +1,5 @@
 #include<iostream>
+
 using namespace std;
     
 class Test
@@ -20,11 +21,18 @@ class Test
 };
     
 int Test::count=0;
+
 int main()
 {
-	Test t1,t2;
-	cout<<Test::getCount()<<endl;
+	Test t1,t2,t3;
+    cout<<t1.count<<" "<<t2.count<<" "<<t3.count<<endl;
+    cout<<Test::count<<endl;
+	
 	cout<<t1.getCount()<<endl;
+    cout<<t2.getCount()<<endl;
+    cout<<t3.getCount()<<endl;
+
+    cout<<Test::getCount()<<endl;
 	    
 }
     
